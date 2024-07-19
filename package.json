@@ -2,12 +2,12 @@
   "name": "maze",
   "version": "0.0.1",
   "description": "A maze generator / solver",
-  "main": "dist/index.js",
   "scripts": {
-    "start": "tsc -w",
+    "start": "tsc && node dist/index.js",
     "test": "jest",
     "lint": "eslint",
     "tsc": "tsc"
+
   },
   "author": "belelabestia",
   "license": "ISC",
