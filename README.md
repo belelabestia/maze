@@ -14,3 +14,9 @@ The program should be able to:
 - Use a maze generation algorithm, such as Prim's algorithm or Kruskal's algorithm.
 - Use a maze-solving algorithm, such as Depth-First Search (DFS) or Breadth-First Search (BFS).
 - Provide a simple user interface to specify the maze dimensions.
+
+## References
+
+- https://en.wikipedia.org/wiki/Pseudorandom_number_generator
+- https://en.wikipedia.org/wiki/Maze_generation_algorithm
+- https://en.wikipedia.org/wiki/Maze-solving_algorithm
