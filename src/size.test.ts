@@ -1,12 +1,9 @@
-import { Size } from "./size";
+import { getSizeFromArgs } from './size';
 
-it('Size works', () => {
-  expect(Size(undefined)).toBeNull();
-  expect(Size(0)).toBeNull();
-  expect(Size('-3')).toBeNull();
-  expect(Size('a')).toBeNull();
-  expect(Size(-2)).toBeNull();
+it('getSizeFromArgv0 works', () => {
+  expect(getSizeFromArgs([])).toBeNull();
+  expect(getSizeFromArgs(['-3'])).toBeNull();
+  expect(getSizeFromArgs(['a'])).toBeNull();
 
-  expect(Size('12')).toBe(12);
-  expect(Size(42)).toBe(42);
+  expect(getSizeFromArgs(['12'])).toBe(12);
 });
