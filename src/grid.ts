@@ -7,14 +7,18 @@ export type Cell = {
   right?: Cell
 };
 
-export type Grid = Cell[][];
+export type Grid = {
+  size: PosInt,
+  cells: Cell[][]
+};
 
-export const Grid = (size: PosInt): Grid => (
-  Array.from(
+export const Grid = (size: PosInt): Grid => ({
+  size,
+  cells: Array.from(
     { length: size },
     () => Array.from(
       { length: size },
       () => ({})
     )
   )
-);
+});
