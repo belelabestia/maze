@@ -1,5 +1,11 @@
-declare const brand: unique symbol;
+import { Branded } from './branded';
 
-export type PosInt =
-  & number
-  & { [brand]: 'PosInt' };
+export type PosInt = Branded<number, 'PosInt'>;
+
+export const PosInt = (x: number): PosInt | null => {
+  if (Number.isNaN(x)) return null;
+  if (!Number.isInteger(x)) return null;
+  if (x < 1) return null;
+
+  return x as PosInt;
+};

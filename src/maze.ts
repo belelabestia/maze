@@ -1,7 +1,4 @@
+import { Branded } from './branded';
 import { Grid } from './grid';
 
-declare const brand: unique symbol;
-
-export type Maze =
-  & Grid
-  & { [brand]: 'Maze' };
+export type Maze = Branded<Grid, 'Maze'>;
