@@ -1,4 +1,4 @@
-import { PosInt } from './pos-int';
+import { type PosInt } from './pos-int';
 
 export type Cell = {
   up?: Cell,
@@ -9,7 +9,7 @@ export type Cell = {
 
 export type Grid = Cell[][];
 
-export const Grid = (size: PosInt): Grid => Array.from(
+export const grid = (size: PosInt): Grid => Array.from(
   { length: size },
   () => Array.from(
     { length: size },
