@@ -8,6 +8,10 @@
     "noUncheckedIndexedAccess": true,
     "skipLibCheck": true,
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "paths": {
+      "core": ["./src/core/index.ts"],
+      "io": ["./src/io/index.ts"]
+    }
   }
 }
